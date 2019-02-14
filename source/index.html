@@ -15,6 +15,8 @@
   </head>
   <body>
 
+  <!-- <<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
     <header class="header">
       <nav class="header__nav nav nav--closed nav--nojs">
         <ul class="nav__list menu">
@@ -58,5 +60,155 @@
       </nav>
     </header>
 
+  <!-- <<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <main class="main">
+      <section class="promo">
+          <h1 class="promo__h1">
+            Морские прогулки
+          </h1>
+
+          <strong class="promo__heading">
+            по чёрному морю
+          </strong>
+
+          <a class="promo__link" href="#">Выбрать круиз</a>
+      </section>
+
+      <section class="catalog">
+        <h2 class="catalog__heading">
+          Каталог круизов
+        </h2>
+
+        <form class="catalog__form sorting" action="https://echo.htmlacademy.ru" method="get">
+          <label class="sorting__legend">
+            Сортировать круизы по
+          </label>
+
+          <select class="sorting__select" name="sorting">
+            <option class="sorting__option" value="price" selected>
+                цене
+            </option>
+          </select>
+        </form>
+
+        <ul class="catalog__list">
+          <li class="catalog__item card">
+            <img class="card__img" src="img/cruise-1-mobile.jpg" alt="Морской круиз в Анапу">
+
+            <div class="card__tag">
+              <p class="card__tag-text">
+                Хит продаж
+              </p>
+            </div>
+
+            <a class="card__link" href="#">
+              <h3 class="card__heading">
+                Морской круиз в Анапу
+              </h3>
+            </a>
+
+            <p class="card__text-route">
+              <b>Маршрут:</b> Сочи-Лазаревское-Геленджик-Анапа
+            </p>
+
+            <p class="card__text-duration">
+              <b>Продолжительность:</b> 10 ч. 0 мин.
+            </p>
+
+            <p class="card__price">
+              49 000 руб.
+            </p>
+          </li>
+          <li class="catalog__item card">
+            <img class="card__img" src="img/cruise-2-mobile.jpg" alt="Обзорная морская прогулка с экскурсией">
+
+            <div class="card__tag">
+              <p class="card__tag-text">
+                Акция
+              </p>
+            </div>
+
+            <a class="card__link" href="#">
+              <h3 class="card__heading">
+                Обзорная морская прогулка с экскурсией
+              </h3>
+            </a>
+
+            <p class="card__text-route">
+              <b>Маршрут:</b> Сочи-Адлер-Сочи (без высадки)
+            </p>
+
+            <p class="card__text-duration">
+              <b>Продолжительность:</b> 1 ч. 0 мин.
+            </p>
+
+            <p class="card__price">
+              5 000 руб.
+
+              <span class="card__price-old">
+                15000 руб.
+              </span>
+            </p>
+          </li>
+          <li class="catalog__item card">
+            <img class="card__img" src="img/cruise-3-mobile.jpg" alt="Морская прогулка в Геленджик">
+
+            <div class="card__tag">
+              <p class="card__tag-text">
+                Скидка 10%
+              </p>
+            </div>
+
+            <a class="card__link" href="#">
+              <h3 class="card__heading">
+                Морская прогулка в Геленджик
+              </h3>
+            </a>
+
+            <p class="card__text-route">
+              <b>Маршрут:</b> Сочи-Туапсе-Геленджик
+            </p>
+
+            <p class="card__text-duration">
+              <b>Продолжительность:</b> 12 ч. 30 мин.
+            </p>
+
+            <p class="card__price">
+              7 000 руб.
+
+              <span class="card__price-old">
+                10000 руб.
+              </span>
+            </p>
+          </li>
+          <li class="catalog__item card">
+            <img class="card__img" src="img/cruise-4-mobile.jpg" alt="Морской круиз в Новороссийск">
+
+            <a class="card__link" href="#">
+              <h3 class="card__heading">
+                Морской круиз в Новороссийск
+              </h3>
+            </a>
+
+            <p class="card__text-route">
+              <b>Маршрут:</b> Сочи-Геленджик-Новороссйиск-Геленджик-Сочи
+            </p>
+
+            <p class="card__text-duration">
+              <b>Продолжительность:</b> 13 ч. 0 мин.
+            </p>
+
+            <p class="card__price">
+              14 800 руб.
+            </p>
+          </li>
+        </ul>
+
+        <a class="catalog__link" href="#">
+          Больше круизов
+        </a>
+      </section>
+    </main>
   </body>
 </html>
