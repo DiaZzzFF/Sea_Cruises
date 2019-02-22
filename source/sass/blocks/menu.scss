@@ -1,0 +1,32 @@
+.menu {
+  @include ul-style;
+
+  padding-top: 58px;
+
+  background-color: $dark-blue;
+}
+
+.menu__item:last-of-type .menu__link {
+  padding-bottom: 26px;
+}
+
+.menu__link {
+  display: block;
+  padding-left: 44px;
+
+  font-size: 18px;
+  line-height: 48px;
+  font-family: "Roboto Slab", "Georgia", serif;
+  color: $white;
+
+  background-color: $dark-blue;
+
+  &:hover {
+    background-color: black;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: $white-active;
+  }
+}
