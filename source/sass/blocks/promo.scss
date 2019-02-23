@@ -1,0 +1,66 @@
+.promo {
+  @include mobile-grid;
+
+  position: relative;
+
+  min-height: 583px;
+  margin-top: -96px;
+  padding-top: 95px;
+
+  text-align: center;
+
+  background-image: url("./../../img/bg-sochi-mobile.jpg");
+  background-repeat: no-repeat;
+}
+
+.promo__h1 {
+  margin: 0;
+
+  @include text-roboto;
+
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.promo__heading {
+  display: block;
+  margin-top: 3px;
+
+  @include text-roboto;
+
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+.promo__link {
+  display: block;
+  width: 202px;
+  margin: 0 auto;
+  margin-top: 38px;
+
+  line-height: 47px;
+  color: $white;
+
+  background-color: $sky;
+
+  &:hover {
+    background-color: $sky-hover;
+  }
+
+  &:active {
+    background-color: $sky-press;
+  }
+}
+
+.promo__line {
+  position: absolute;
+  left: 125px;
+  bottom: -45px;
+
+  width: 48px;
+  height: 222px;
+
+  background-image: url("./../../img/line-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
