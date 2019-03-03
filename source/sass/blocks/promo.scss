@@ -19,7 +19,6 @@
   @include text-roboto;
 
   font-size: 20px;
-  letter-spacing: 1px;
 }
 
 .promo__heading {
@@ -30,6 +29,7 @@
 
   font-size: 50px;
   text-transform: uppercase;
+  letter-spacing: 0;
 }
 
 .promo__link {

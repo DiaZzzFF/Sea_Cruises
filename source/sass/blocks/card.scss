@@ -1,0 +1,100 @@
+.card {
+  position: relative;
+
+  width: 290px;
+  min-height: 466px;
+  margin-bottom: 20px;
+
+  background-color: $white;
+}
+
+.card__promo {
+  padding: 27px 22px 0;
+}
+
+.card__tag {
+  position: absolute;
+  top: -7px;
+  right: 23px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 89px;
+  height: 101px;
+
+  text-align: center;
+
+  &--sky {
+    background-image: url("./../../img/tag-sky.svg");
+  }
+
+  &--red {
+    background-image: url("./../../img/tag-red.svg");
+  }
+}
+
+.card__tag-text {
+  margin: 0;
+  margin-top: -10px;
+  padding: 0 5px;
+
+  line-height: 18px;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.card__link {
+  &:hover {
+    color: $sky-card;
+    text-decoration: underline;
+  }
+}
+
+.card__heading {
+  @include text-roboto;
+
+  font-size: 18px;
+  line-height: 22px;
+  color: $sky-card;
+}
+
+.card__arrow {
+  display: inline-block;
+  width: 5px;
+  height: 8px;
+  margin-bottom: 1px;
+
+  background-image: url("./../../img/icon-arrow-right.svg");
+  background-repeat: no-repeat;
+}
+
+.card__heading,
+.card__text {
+  margin: 0;
+}
+
+.card__text {
+  padding-left: 2px;
+
+  &--route {
+    margin-top: 7px;
+  }
+
+  &--price {
+    margin-top: 6px;
+
+    @include text-roboto;
+
+    font-size: 30px;
+    letter-spacing: 0;
+  }
+
+  &--price-old {
+    font-size: 18px;
+    text-decoration: line-through;
+
+    opacity: 0.55;
+  }
+}

@@ -1,0 +1,21 @@
+.sorting {
+  text-align: center;
+}
+
+.sorting__legend {
+  letter-spacing: 0.5px;
+}
+
+.sorting__select {
+  margin-left: -4px;
+
+  @include text-raleway;
+
+  font-style: italic;
+  letter-spacing: 0.5px;
+
+  background-color: inherit;
+  border: none;
+
+  cursor: pointer;
+}
