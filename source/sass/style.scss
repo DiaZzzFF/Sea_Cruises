@@ -1,3 +1,22 @@
 @import "../sass/normalize.scss";
 @import "../sass/fonts.scss";
 @import "../sass/global.scss";
+@import "../sass/variables.scss";
+@import "../sass/mixins.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< header >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/nav.scss";
+@import "../sass/blocks/menu.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/promo.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/sorting.scss";
+@import "../sass/blocks/card.scss";
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@import "../sass/blocks/footer.scss";
+@import "../sass/blocks/social.scss";

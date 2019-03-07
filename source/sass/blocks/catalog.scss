@@ -1,0 +1,57 @@
+.catalog {
+  @include mobile-grid;
+}
+
+.catalog__heading {
+  margin-top: 39px;
+  margin-bottom: 0;
+
+  @include text-roboto;
+
+  font-size: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.catalog__list {
+  @include ul-style;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-top: 26px;
+}
+
+.catalog__link {
+  display: block;
+  width: 202px;
+  margin: 0 auto;
+  padding-left: 10px;
+
+  line-height: 47px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: $white;
+
+  background-color: $sky;
+
+  &:hover {
+    background-color: $sky-hover;
+  }
+
+  &:active {
+    background-color: $sky-press;
+  }
+}
+
+.catalog__arrow {
+  display: inline-block;
+  width: 8px;
+  height: 5px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+
+  background-image: url("./../../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+}
