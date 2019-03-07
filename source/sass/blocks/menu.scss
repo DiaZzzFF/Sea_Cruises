@@ -1,9 +1,11 @@
 .menu {
   @include ul-style;
 
-  padding-top: 58px;
-
   background-color: $dark-blue;
+}
+
+.menu__item:first-of-type {
+  padding-top: 58px;
 }
 
 .menu__item:last-of-type .menu__link {
