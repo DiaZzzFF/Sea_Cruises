@@ -52,19 +52,60 @@
           </li>
         </ul>
 
-        <div class="nav__box-2">
+        <div class="nav__box">
           <button class="nav__toggle nav__toggle--close" type="button" aria-label="Открыть / Закрыть меню"></button>
-
-          <a class="nav__logo">
-            <img class="nav__logo-img" src="img/logo-mobile.png" width="70" height="70" alt="Логотип 'Морские круизы'">
-          </a>
         </div>
+
+        <a class="nav__logo">
+          <img class="nav__logo-img" src="img/logo-mobile.png" width="70" height="70" alt="Логотип 'Морские круизы'">
+        </a>
       </nav>
+
+      <section class="header__control-panel control-panel">
+        <a class="control-panel__profile" href="#">
+          Личный кабинет
+
+          <svg class="control-panel__arrow" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+            <path fill-rule="evenodd" d="M230,2681l-4-5H234Z" transform="translate(-226 -2676)"/>
+          </svg>
+        </a>
+
+        <img class="control-panel__currency-img" src="img/icon-rub.svg" width="10" height="12" alt="Валюта">
+
+        <form class="control-panel__form" method="GET">
+          <select class="control-panel__select control-panel__select--currency" name="currency">
+            <option class="control-panel__option control-panel__option--ruble" value="rub" selected>
+              Рубль
+            </option>
+            <option class="control-panel__option control-panel__option--euro" value="user">
+              Евро
+            </option>
+          </select>
+
+          <select class="control-panel__select control-panel__select--lang" name="language">
+            <option class="control-panel__option" value="russian" selected>
+              Ru
+            </option>
+            <option class="control-panel__option" value="english">
+              En
+            </option>
+          </select>
+        </form>
+
+        <div class="header__info">
+          <p class="header__tel">
+            8 800 500-61-05
+          </p>
+          <p class="header__time">
+            Круглосуточная поддержка
+          </p>
+        </div>
+      </section>
     </header>
 
   <!-- <<<<<<<<<<<<<<< main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
 
-    <main class="main">
+    <main class="main"">
       <section class="promo">
           <h1 class="promo__h1">
             Морские прогулки
@@ -301,6 +342,7 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/currency-img.js"></script>
   </body>
 </html>

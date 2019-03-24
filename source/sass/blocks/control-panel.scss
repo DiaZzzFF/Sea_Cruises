@@ -1,0 +1,49 @@
+.control-panel__profile {
+  display: block;
+  padding-left: 18px;
+  margin-right: 39px;
+
+  line-height: 48px;
+  color: $dark-blue;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 10px;
+    height: 12px;
+
+    background-image: url("../../img/icon-user.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.control-panel__arrow {
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+
+.control-panel__select {
+  margin-right: 36px;
+  padding-right: 14px;
+
+  background-color: transparent;
+  background-image: url("../../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 6.5px;
+  background-size: 8px 5px;
+  border: none;
+
+  appearance: none;
+
+  &--currency {
+    margin-left: 8px;
+  }
+}

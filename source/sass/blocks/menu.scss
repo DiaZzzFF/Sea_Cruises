@@ -32,3 +32,19 @@
     color: $white-active;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .menu {
+    margin-left: 15px;
+  }
+
+  .menu__item:first-of-type {
+    padding-top: 56px;
+  }
+
+  .menu__item:last-of-type .menu__link {
+    padding-bottom: 65px;
+  }
+}
