@@ -27,11 +27,11 @@
   text-align: center;
 
   &--sky {
-    background-image: url("./../../img/tag-sky.svg");
+    background-image: url("../img/tag-sky.svg");
   }
 
   &--red {
-    background-image: url("./../../img/tag-red.svg");
+    background-image: url("../img/tag-red.svg");
   }
 }
 
@@ -66,7 +66,7 @@
   height: 8px;
   margin-bottom: 1px;
 
-  background-image: url("./../../img/icon-arrow-right.svg");
+  background-image: url("../img/icon-arrow-right.svg");
   background-repeat: no-repeat;
 }
 
@@ -96,5 +96,24 @@
     text-decoration: line-through;
 
     opacity: 0.55;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .card {
+    width: 345px;
+    min-height: 508px;
+    margin-right: 30px;
+    margin-bottom: 25px;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .card__tag {
+    right: 32px;
   }
 }

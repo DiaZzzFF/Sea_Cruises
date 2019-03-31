@@ -46,12 +46,23 @@
 }
 
 .catalog__arrow {
-  display: inline-block;
-  width: 8px;
-  height: 5px;
   margin-bottom: 1px;
   margin-left: 10px;
 
-  background-image: url("./../../img/icon-arrow.svg");
-  background-repeat: no-repeat;
+  fill: $white;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    width: 750px;
+  }
+
+  .catalog__heading {
+    margin-top: 53px;
+
+    font-size: 26px;
+    line-height: 40px;
+  }
 }

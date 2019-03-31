@@ -7,15 +7,32 @@
 }
 
 .sorting__select {
-  margin-left: -4px;
+  padding-right: 16px;
 
   @include text-raleway;
 
   font-style: italic;
   letter-spacing: 0.5px;
+  line-height: 20px;
 
-  background-color: inherit;
+  background-color: transparent;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 9px;
   border: none;
 
+  appearance: none;
   cursor: pointer;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .sorting {
+    line-height: 20px;
+  }
+
+  .sorting__legend {
+    letter-spacing: 0.5px;
+  }
 }

@@ -134,7 +134,7 @@
 
           <select class="sorting__select" name="sorting">
             <option class="sorting__option" value="price" selected>
-                цене
+              цене
             </option>
           </select>
         </form>
@@ -142,7 +142,10 @@
         <ul class="catalog__list">
           <li class="catalog__item card">
             <a class="card__link-img" href="#">
-              <img class="card__img" src="img/cruise-1-mobile.jpg" width="290" height="229" alt="Морской круиз в Анапу">
+              <picture>
+                <source media="(min-width: 750px)" srcset="img/cruise-1-tablet.jpg">
+                <img class="card__img" src="img/cruise-1-mobile.jpg" alt="Морской круиз в Анапу">
+              </picture>
             </a>
             <div class="card__tag card__tag--sky">
               <p class="card__tag-text">
@@ -174,7 +177,10 @@
           </li>
           <li class="catalog__item card">
             <a class="card__link-img" href="#">
-              <img class="card__img" src="img/cruise-2-mobile.jpg" width="290" height="229" alt="Обзорная морская прогулка с экскурсией">
+              <picture>
+                <source media="(min-width: 750px)" srcset="img/cruise-2-tablet.jpg">
+                <img class="card__img" src="img/cruise-2-mobile.jpg" alt="Обзорная морская прогулка с экскурсией">
+              </picture>
             </a>
 
             <div class="card__tag card__tag--red">
@@ -212,7 +218,10 @@
           </li>
           <li class="catalog__item card">
             <a class="card__link-img" href="#">
-              <img class="card__img" src="img/cruise-3-mobile.jpg" width="290" height="229" alt="Морская прогулка в Геленджик">
+              <picture>
+                <source media="(min-width: 750px)" srcset="img/cruise-3-tablet.jpg">
+                <img class="card__img" src="img/cruise-3-mobile.jpg" alt="Морская прогулка в Геленджик">
+              </picture>
             </a>
 
             <div class="card__tag card__tag--red">
@@ -249,7 +258,10 @@
           </li>
           <li class="catalog__item card">
             <a class="card__link-img" href="#">
-              <img class="card__img" src="img/cruise-4-mobile.jpg" width="290" height="229" alt="Морской круиз в Новороссийск">
+              <picture>
+                <source media="(min-width: 750px)" srcset="img/cruise-4-tablet.jpg">
+                <img class="card__img" src="img/cruise-4-mobile.jpg" alt="Морской круиз в Новороссийск">
+              </picture>
             </a>
 
             <article class="card__promo">
@@ -278,7 +290,10 @@
 
         <a class="catalog__link" href="#">
           Больше круизов
-          <span class="catalog__arrow"></span>
+
+          <svg class="catalog__arrow" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
+            <path fill-rule="evenodd" d="M230,2681l-4-5H234Z" transform="translate(-226 -2676)"/>
+          </svg>
         </a>
       </section>
     </main>
