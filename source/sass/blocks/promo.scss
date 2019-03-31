@@ -1,7 +1,9 @@
 .promo {
-  @include mobile-grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  position: relative;
+  @include mobile-grid;
 
   min-height: 583px;
   margin-top: -96px;
@@ -9,8 +11,9 @@
 
   text-align: center;
 
-  background-image: url("./../../img/bg-sochi-mobile.jpg");
+  background-image: url("../../img/bg-sochi-mobile.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .promo__h1 {
@@ -52,15 +55,53 @@
   }
 }
 
-.promo__line {
-  position: absolute;
-  left: 125px;
-  bottom: -45px;
+.promo__line-box {
+  position: relative;
 
   width: 48px;
+  height: 22px;
+}
+
+.promo__line {
+  position: absolute;
+  top: 24px;
+  left: -12px;
+
+  width: 50px;
   height: 222px;
 
-  background-image: url("./../../img/line-mobile.svg");
+  background-image: url("../../img/line-mobile.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .promo {
+    width: 100%;
+    min-height: 600px;
+
+    margin-top: -70px;
+    padding-top: 214px;
+
+    background-image: url("../../img/bg-sochi-tablet.jpg");
+    background-position: center;
+    background-size: auto 600px;
+  }
+
+  .promo__h1 {
+    font-size: 26px;
+  }
+
+  .promo__heading {
+    margin-top: 9px;
+
+    font-size: 72px;
+    letter-spacing: -2px;
+  }
+
+  .promo__link {
+    margin-top: 26px;
+  }
 }
