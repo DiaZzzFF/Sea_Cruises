@@ -36,23 +36,9 @@
 }
 
 .promo__link {
-  display: block;
-  width: 202px;
-  margin: 0 auto;
   margin-top: 38px;
 
-  line-height: 47px;
-  color: $white;
-
-  background-color: $sky;
-
-  &:hover {
-    background-color: $sky-hover;
-  }
-
-  &:active {
-    background-color: $sky-press;
-  }
+  @include sky-btn;
 }
 
 .promo__line-box {

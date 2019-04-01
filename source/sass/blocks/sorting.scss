@@ -15,14 +15,9 @@
   letter-spacing: 0.5px;
   line-height: 20px;
 
-  background-color: transparent;
-  background-image: url("../img/icon-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 9px;
-  border: none;
+  @include form-select;
 
-  appearance: none;
-  cursor: pointer;
+  background-position: right 9px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */

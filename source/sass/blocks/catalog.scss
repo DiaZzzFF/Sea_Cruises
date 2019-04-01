@@ -24,25 +24,12 @@
 }
 
 .catalog__link {
-  display: block;
-  width: 202px;
-  margin: 0 auto;
   padding-left: 10px;
 
-  line-height: 47px;
   letter-spacing: 1px;
   text-align: center;
-  color: $white;
 
-  background-color: $sky;
-
-  &:hover {
-    background-color: $sky-hover;
-  }
-
-  &:active {
-    background-color: $sky-press;
-  }
+  @include sky-btn;
 }
 
 .catalog__arrow {

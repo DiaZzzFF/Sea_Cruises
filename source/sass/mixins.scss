@@ -24,3 +24,47 @@
   letter-spacing: 1px;
   color: $dark-blue;
 }
+
+@mixin link {
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: red;
+  }
+}
+
+@mixin form-select {
+  background-color: transparent;
+  background-image: url("../img/icon-arrow.svg");
+  background-repeat: no-repeat;
+  border: none;
+
+  appearance: none;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+}
+
+@mixin sky-btn {
+  display: block;
+  width: 202px;
+  margin: 0 auto;
+
+  line-height: 47px;
+  color: $white;
+
+  background-color: $sky;
+
+  &:hover {
+    background-color: $sky-hover;
+  }
+
+  &:active {
+    background-color: $sky-press;
+  }
+}

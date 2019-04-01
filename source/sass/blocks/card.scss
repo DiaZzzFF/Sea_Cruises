@@ -46,9 +46,12 @@
 }
 
 .card__link {
-  &:hover {
-    color: $sky-card;
-    text-decoration: underline;
+  color: $sky-card;
+
+  @include link;
+
+  &:active .card__arrow {
+    fill: red;
   }
 }
 
@@ -57,17 +60,13 @@
 
   font-size: 18px;
   line-height: 22px;
-  color: $sky-card;
 }
 
 .card__arrow {
-  display: inline-block;
-  width: 5px;
-  height: 8px;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 
-  background-image: url("../img/icon-arrow-right.svg");
-  background-repeat: no-repeat;
+  fill: $sky-card;
+  transform: rotate(-90deg);
 }
 
 .card__heading,
