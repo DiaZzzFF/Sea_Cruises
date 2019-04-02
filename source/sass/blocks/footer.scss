@@ -10,6 +10,10 @@
   background-color: $white;
 }
 
+.footer__nav {
+  display: none;
+}
+
 .footer__info {
   margin-top: 14px;
 }
@@ -31,4 +35,46 @@
 
 .footer__copyright {
   line-height: 30px;
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .footer {
+    width: 100%;
+    min-height: 129px;
+    margin-top: 62px;
+
+    text-align: left;
+  }
+
+  .footer__box {
+    display: flex;
+
+    width: 720px;
+    margin: 0 auto;
+  }
+
+  .footer__nav {
+    display: block;
+  }
+
+  .footer__nav-list {
+    @include ul-style;
+  }
+
+  .footer__nav-link {
+    color: inherit;
+
+    @include link;
+  }
+
+  .footer__social {
+    margin-left: 75px;
+  }
+
+  .footer__info {
+    margin-top: 0;
+    margin-left: auto;
+  }
 }

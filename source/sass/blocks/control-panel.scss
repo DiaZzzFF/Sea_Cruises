@@ -1,0 +1,47 @@
+.control-panel__profile {
+  display: block;
+  padding-left: 18px;
+  margin-right: 39px;
+
+  line-height: 48px;
+  color: $dark-blue;
+
+  @include link;
+
+  &:active .control-panel__arrow {
+    fill: red;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 17px;
+    left: 0;
+
+    width: 10px;
+    height: 12px;
+
+    background-image: url("../img/icon-user.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.control-panel__arrow {
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+
+.control-panel__select {
+  margin-right: 36px;
+  padding-right: 14px;
+
+  background-position: right 6.5px;
+  background-size: 8px 5px;
+
+  @include form-select;
+
+  &--currency {
+    margin-left: 8px;
+  }
+}

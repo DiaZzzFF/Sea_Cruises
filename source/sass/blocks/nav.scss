@@ -1,11 +1,4 @@
-.nav {
-  @include mobile-grid;
-
-  position: relative;
-  z-index: 2;
-}
-
-.nav__box-2 {
+.nav__box {
   position: relative;
   z-index: 2;
 
@@ -15,6 +8,9 @@
 }
 
 .nav__logo {
+  position: relative;
+  z-index: 2;
+
   display: block;
   width: 70px;
   height: 70px;
@@ -111,12 +107,91 @@
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< js-menu >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 
-@media (max-width: $mobile-width-only) {
+@media (min-width: 320px) {
   .nav--closed .menu__item {
     display: none;
   }
 
+  /* <<<<< js-menu /mobile/ (nojs) >>>>> */
+
   .nav--nojs .menu__item {
     display: block;
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:first-of-type .menu__link {
+      padding-top: 26px;
+    }
+  }
+
+  .nav--nojs .nav__toggle {
+    display: none;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  .nav {
+    position: absolute;
+    z-index: 5;
+
+    width: 420px;
+    margin-top: 43px;
+  }
+
+  .nav__box {
+    position: absolute;
+
+    margin-top: -58px;
+  }
+
+  .nav__logo {
+    margin-top: 78px;
+    margin-left: 340px;
+  }
+
+  .nav--opened .nav__toggle {
+    background-color: transparent;
+
+    &:hover,
+    &::before,
+    &::after {
+      background-color: $dark-blue;
+    }
+
+    &:hover::before,
+    &:hover::after {
+      background-color: $white;
+    }
+  }
+
+  .nav--opened .nav__toggle--close {
+    top: -409px;
+  }
+
+  /* <<<<< js-menu /tablet/ (nojs) >>>>> */
+
+  .nav--nojs .menu {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 750px;
+    margin: 0;
+  }
+
+  .nav--nojs .menu__item {
+    display: block;
+
+    &:first-of-type .menu__link,
+    &:last-of-type .menu__link {
+      padding: 0 18px;
+    }
+  }
+
+  .nav--nojs .menu__link {
+    padding: 0 18px;
   }
 }
