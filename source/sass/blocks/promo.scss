@@ -67,7 +67,6 @@
   .promo {
     width: 100%;
     min-height: 600px;
-
     margin-top: -70px;
     padding-top: 214px;
 
@@ -89,5 +88,41 @@
 
   .promo__link {
     margin-top: 26px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 647px;
+    padding-top: 178px;
+
+    background-image: url("../img/bg-sochi-desktop.jpg");
+    background-size: auto 647px;
+  }
+
+  .promo__h1 {
+    font-size: 36px;
+  }
+
+  .promo__heading {
+    margin-top: 60px;
+
+    font-size: 100px;
+  }
+
+  .promo__link {
+    margin-top: 70px;
+  }
+
+  .promo__line {
+    top: 17px;
+
+    width: 60px;
+    height: 274px;
+
+    background-image: url("../img/line-desktop.svg");
+    background-size: 100%;
   }
 }
