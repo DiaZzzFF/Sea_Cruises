@@ -78,3 +78,19 @@
     margin-left: auto;
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .footer {
+    min-height: 130px;
+  }
+
+  .footer__box {
+    width: 1140px;
+  }
+
+  .footer__social {
+    margin-left: 149px;
+  }
+}
