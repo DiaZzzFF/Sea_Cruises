@@ -9,7 +9,13 @@
 }
 
 .card__promo {
-  padding: 27px 22px 0;
+  display: flex;
+  flex-direction: column;
+
+  min-height: 237px;
+  padding-top: 27px;
+  padding-left: 22px;
+  padding-right: 5px;
 }
 
 .card__tag {
@@ -77,21 +83,27 @@
 .card__text {
   padding-left: 2px;
 
+  letter-spacing: 0.7px;
+
   &--route {
     margin-top: 7px;
   }
 
   &--price {
-    margin-top: 6px;
+    margin-top: auto;
+    margin-bottom: 31px;
 
     @include text-roboto;
 
     font-size: 30px;
-    letter-spacing: 0;
+    letter-spacing: 1.3px;
   }
 
   &--price-old {
+    margin-left: -5px;
+
     font-size: 18px;
+    letter-spacing: 1px;
     text-decoration: line-through;
 
     opacity: 0.55;
@@ -112,7 +124,18 @@
     }
   }
 
+  .card__promo {
+    padding-left: 32px;
+    padding-right: 15px;
+  }
+
   .card__tag {
     right: 32px;
+  }
+
+  .card__text {
+    &--price-old {
+      margin-left: 3px;
+    }
   }
 }

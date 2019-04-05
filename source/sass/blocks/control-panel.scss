@@ -1,9 +1,12 @@
 .control-panel__profile {
+  position: relative;
+
   display: block;
   padding-left: 18px;
   margin-right: 39px;
 
   line-height: 48px;
+  letter-spacing: 0.7px;
   color: $dark-blue;
 
   @include link;
@@ -36,6 +39,8 @@
   margin-right: 36px;
   padding-right: 14px;
 
+  letter-spacing: 0.7px;
+
   background-position: right 6.5px;
   background-size: 8px 5px;
 
@@ -43,5 +48,9 @@
 
   &--currency {
     margin-left: 8px;
+  }
+
+  &--lang {
+    letter-spacing: -0.2px;
   }
 }

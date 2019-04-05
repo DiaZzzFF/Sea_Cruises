@@ -36,9 +36,11 @@
 }
 
 .promo__link {
+  @include sky-btn;
+
   margin-top: 38px;
 
-  @include sky-btn;
+  letter-spacing: 0.5px;
 }
 
 .promo__line-box {
