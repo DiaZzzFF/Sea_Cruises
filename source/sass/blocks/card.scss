@@ -6,6 +6,10 @@
   margin-bottom: 20px;
 
   background-color: $white;
+
+  &:nth-of-type(5) {
+    display: none;
+  }
 }
 
 .card__promo {
@@ -139,3 +143,48 @@
     }
   }
 }
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .card {
+    width: 555px;
+    min-height: 304px;
+    margin-bottom: 21px;
+
+    &:nth-of-type(1) {
+      min-height: 628px;
+    }
+
+    &:nth-of-type(2) {
+      margin-bottom: 20px;
+    }
+
+    &:nth-of-type(2n + 1) {
+      margin-right: 0;
+    }
+
+    &:nth-of-type(5) {
+      display: block;
+    }
+  }
+
+  .card__promo {
+    min-height: 191px;
+  }
+
+  .card__br {
+    display: none;
+  }
+
+  .card__tag {
+    right: 46px;
+  }
+
+  .card__text {
+    &--price-old {
+      margin-left: 18px;
+    }
+  }
+}
+
