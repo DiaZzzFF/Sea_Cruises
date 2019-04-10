@@ -26,15 +26,18 @@
 
 .footer__tel {
   font-weight: 700;
+  letter-spacing: 1.2px;
 }
 
 .footer__time {
   font-size: 10px;
   line-height: 18px;
+  letter-spacing: 0.5px;
 }
 
 .footer__copyright {
   line-height: 30px;
+  letter-spacing: 0.75px;
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -67,6 +70,8 @@
     color: inherit;
 
     @include link;
+
+    letter-spacing: 0.7px;
   }
 
   .footer__social {
@@ -76,5 +81,21 @@
   .footer__info {
     margin-top: 0;
     margin-left: auto;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .footer {
+    min-height: 130px;
+  }
+
+  .footer__box {
+    width: 1140px;
+  }
+
+  .footer__social {
+    margin-left: 149px;
   }
 }

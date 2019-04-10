@@ -19,9 +19,10 @@
 
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 
     margin-top: 22px;
-    margin-left: 217px;
+    padding-right: 15px;
   }
 
   .header__tel,
@@ -32,10 +33,20 @@
   .header__tel {
     font-weight: 700;
     line-height: 19px;
+    letter-spacing: 1.2px;
   }
 
   .header__time {
     font-size: 10px;
     line-height: 12px;
+    letter-spacing: 0.5px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .header {
+    width: 1170px;
   }
 }

@@ -52,4 +52,51 @@
     font-size: 26px;
     line-height: 40px;
   }
+
+  .catalog__list {
+    padding-top: 33px;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .catalog {
+    width: 1170px;
+  }
+
+  .catalog__heading {
+    margin-top: 107px;
+    margin-bottom: 4px;
+
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .catalog__list {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+    justify-content: space-around;
+
+    padding-top: 40px;
+  }
+
+  .catalog__item {
+    &:nth-of-type(1) {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    &:nth-of-type(2) {
+      grid-area: 1 / 2 / 2 / 3;
+    }
+
+    &:nth-of-type(3) {
+      grid-area: 2 / 2 / 3 / 3;
+    }
+  }
+
+  .catalog__link {
+    margin-top: 4px;
+  }
 }
