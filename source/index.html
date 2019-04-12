@@ -336,13 +336,13 @@
           </li>
         </ul>
 
-        <a class="catalog__link" href="#">
+        <button class="catalog__btn" type="button" aria-label="Открыть //test-popup//">
           Больше круизов
 
           <svg class="catalog__arrow" xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5">
             <path fill-rule="evenodd" d="M230,2681l-4-5H234Z" transform="translate(-226 -2676)"/>
           </svg>
-        </a>
+        </button>
       </section>
     </main>
 
@@ -430,7 +430,88 @@
       </div>
     </footer>
 
+  <!-- <<<<<<<<<<<<<<< popup >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+
+    <div class="popup__overlay">
+      <section class="popup__description">
+        <button class="popup__close" type="button" aria-label="Закрыть"></button>
+
+        <article class="popup__images">
+          <ul class="popup__list">
+            <li class="popup__item">
+              <picture>
+                <source media="(min-width: 1187px)" srcset="img/popup-cruise-5-desktop.jpg">
+
+                <img class="popup__img" src="img/popup-cruise-5-tablet.jpg" alt="Морская прогулка в Абрау-Дюрсо">
+              </picture>
+            </li>
+            <li class="popup__item">
+              <picture>
+                <source media="(min-width: 1187px)" srcset="img/popup-cruise-1-desktop.jpg">
+
+                <img class="popup__img" src="img/popup-cruise-1-tablet.jpg" alt="Морской круиз в Анапу">
+              </picture>
+            </li>
+            <li class="popup__item">
+              <picture>
+                <source media="(min-width: 1187px)" srcset="img/popup-cruise-4-desktop.jpg">
+
+                <img class="popup__img" src="img/popup-cruise-4-tablet.jpg" alt="Морской круиз в Новороссийск">
+              </picture>
+            </li>
+            <li class="popup__item">
+              <picture>
+                <source media="(min-width: 1187px)" srcset="img/popup-cruise-2-desktop.jpg">
+
+                <img class="popup__img" src="img/popup-cruise-2-tablet.jpg" alt="Обзорная морская прогулка с экскурсией">
+              </picture>
+            </li>
+            <li class="popup__item">
+              <picture>
+                <source media="(min-width: 1187px)" srcset="img/popup-cruise-6-desktop.jpg">
+
+                <img class="popup__img" src="img/popup-cruise-6-tablet.jpg" alt="Something">
+              </picture>
+            </li>
+          </ul>
+        </article>
+
+        <article class="popup__card-promo">
+          <a class="popup__card-link card__link" href="#">
+            <h3 class="popup__card-heading card__heading card__heading--cruise-5">
+              Морская прогулка в Абрау-Дюрсо
+            </h3>
+          </a>
+
+          <p class="popup__card-text popup__card-text--route card__text card__text--route">
+            <b>Маршрут:</b> Сочи-Абрау-Дюрсо
+          </p>
+
+          <p class="popup__card-text card__text card__text--duration">
+            <b>Продолжительность:</b> 11 ч. 0 мин.
+          </p>
+
+          <p class="popup__card-text popup__card-text--schedule card__text">
+            <b>Расписание:</b><br>
+            Отправление из Сочи: ежедневно в 10:00, 11:40, 13:20, 15:00, 16:40<br>
+            Отправление из Абрау-Дюрсо: ежедневно<br class="popup__br"> в 12:25, 14:05, 15:45, 17:25, 19:05<br>
+            Продолжительность: 11 часов 0 мин., из которых 10 часов - морская прогулка (туда и обратно), от 1 часа 30 мин. - свободное время в Ласточкином гнезде<br>
+            Причал отправления/прибытия: набережная Ленина, причал №8, теплоход "Азов"
+          </p>
+
+          <p class="popup__card-text popup__card-text--price card__text card__text--price">
+            14 800 руб.
+          </p>
+
+          <a class="popup__reservation-link" href="#" >
+            Бронирование
+          </a>
+        </article>
+      </section>
+    </div>
+
     <script src="js/nav.js"></script>
     <script src="js/currency-img.js"></script>
+    <script src="js/test-popup.js"></script>
   </body>
 </html>

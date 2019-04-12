@@ -23,11 +23,13 @@
   padding-top: 26px;
 }
 
-.catalog__link {
+.catalog__btn {
   padding-left: 10px;
 
   letter-spacing: 1px;
   text-align: center;
+
+  border: none;
 
   @include sky-btn;
 }
@@ -96,7 +98,7 @@
     }
   }
 
-  .catalog__link {
+  .catalog__btn {
     margin-top: 4px;
   }
 }
