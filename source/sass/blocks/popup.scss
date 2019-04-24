@@ -1,0 +1,178 @@
+.popup__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 555;
+
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< tablet >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $tablet-width) {
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2555px);
+    }
+
+    70% {
+      transform: translateY(25px);
+    }
+
+    90% {
+      transform: translateY(-25px);
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .popup--show {
+    display: block;
+
+    animation-name: bounce;
+    animation-duration: 0.5s;
+  }
+
+  .popup__description {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+
+    width: 721px;
+    height: 691px;
+    margin: auto;
+    padding-top: 97px;
+    padding-left: 64px;
+    padding-bottom: 28px;
+
+    background-color: $white;
+
+    overflow-y: auto;
+  }
+
+  .popup__close {
+    position: absolute;
+    top: 23px;
+    right: 25px;
+
+    width: 17px;
+    height: 15px;
+
+    background-color: transparent;
+    background-image: url("../img/icon-close.svg");
+    background-size: 17px 15px;
+    background-repeat: no-repeat;
+    border: 0;
+
+    cursor: pointer;
+  }
+
+  .popup__list {
+    @include ul-style;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    width: 282px;
+    padding-bottom: 28px;
+  }
+
+  .popup__item {
+    &:not(:first-of-type) {
+      margin-top: 5px;
+    }
+  }
+
+  .popup__card-promo {
+    width: 49%;
+    margin-left: 30px;
+    overflow: auto;
+  }
+
+  .popup__card-heading {
+    width: 60%;
+  }
+
+  .popup__br {
+    display: none;
+  }
+
+  .popup__card-text {
+    &--route {
+      margin-top: 8.5px;
+    }
+
+    &--schedule {
+      margin-top: 7px;
+    }
+
+    &--price {
+      margin-top: 21px;
+      margin-bottom: 11px;
+    }
+  }
+
+  .popup__reservation-link {
+    @include sky-btn;
+
+    margin-left: 0;
+
+    text-align: center;
+  }
+}
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< desktop >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+@media (min-width: $desktop-width) {
+  .popup__description {
+    width: 850px;
+    padding-top: 118px;
+    padding-left: 48px;
+  }
+
+  .popup__list {
+    width: 361px;
+  }
+
+  .popup__item {
+    &:not(:first-of-type) {
+      margin-top: 7px;
+    }
+  }
+
+  .popup__card-promo {
+    width: 45%;
+  }
+
+  .popup__card-heading {
+    width: 100%;
+  }
+
+  .popup__br {
+    display: block;
+  }
+
+  .popup__card-text {
+    &--route {
+      margin-top: 31px;
+    }
+
+    &--price {
+      margin-top: 16px;
+      margin-bottom: 9px;
+    }
+  }
+}
