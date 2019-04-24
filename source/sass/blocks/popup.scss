@@ -58,6 +58,8 @@
     padding-bottom: 28px;
 
     background-color: $white;
+
+    overflow-y: auto;
   }
 
   .popup__close {
@@ -85,6 +87,7 @@
     justify-content: space-between;
 
     width: 282px;
+    padding-bottom: 28px;
   }
 
   .popup__item {
@@ -96,6 +99,7 @@
   .popup__card-promo {
     width: 49%;
     margin-left: 30px;
+    overflow: auto;
   }
 
   .popup__card-heading {
@@ -137,7 +141,6 @@
     width: 850px;
     padding-top: 118px;
     padding-left: 48px;
-    padding-bottom: 28px;
   }
 
   .popup__list {

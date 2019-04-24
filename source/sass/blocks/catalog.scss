@@ -45,7 +45,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog {
-    width: 750px;
+    width: 720px;
   }
 
   .catalog__heading {
@@ -59,7 +59,7 @@
     display: grid;
     grid-template-columns: max-content;
     grid-template-rows: max-content;
-    justify-content: space-around;
+    justify-content: space-between;
 
     padding-top: 33px;
   }
@@ -83,7 +83,7 @@
 
 @media (min-width: $desktop-width) {
   .catalog {
-    width: 1170px;
+    width: 1140px;
   }
 
   .catalog__heading {
